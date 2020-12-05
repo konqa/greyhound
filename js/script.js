@@ -33,12 +33,18 @@ function showSlides(n) {
 
 // Form actions
 
-function validate() {
+function showTravelOptions() {
   if (document.querySelector("#diplomat").checked === true) {
-    window.alert("changed");
+    document.querySelector("#traveloptions").style.display = "block";
+  } else {
+    document.querySelector("#traveloptions").style.display = "none";
   }
 }
 
-function showTravelOptions() {
-  console.log("sjgsjgs");
+function showReturn() {
+  if (document.querySelector("#oneway").checked === true) {
+    document.querySelector("#returns").style.display = "none";
+  } else {
+    document.querySelector("#returns").style.display = "block";
+  }
 }

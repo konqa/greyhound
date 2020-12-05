@@ -4,39 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Grey-Hound Coaches</title>
-    <meta name="description" content="Our intercity bus and coach network covers all the major cities in South Africa as well as Harare, Bulawayo in Zimbabwe and Maputo in Mozambique."/>
+    <meta
+      name="description"
+      content="Our intercity bus and coach network covers all the major cities in South Africa as well as Harare, Bulawayo in Zimbabwe and Maputo in Mozambique."
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/logo-small.png"  />
+    <link rel="shortcut icon" href="images/logo-small.png" />
   </head>
   <body>
     <header>
-        <nav>
-          <ul>
-            <li class="logo">
-              <a href="index.html">
-                <img src="images/logo.png" alt="logo" width="120" />
-              </a>
-            </li>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="bookings.html">Bookings</a></li>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="droplink" href="about.html"
-                >About</a
-              >
-              <div class="dropdown-items">
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </div>
-            </li>
-            <li><a href="arrivals.html">Arrivals</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" width="120" />
+            </a>
+          </li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li><a href="arrivals.html">Arrivals</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <!-- start slideshow -->
@@ -45,19 +41,19 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
-          <img src="images/slide-1.jpg" style="width: 100%" />
+          <img src="images/slide-1a.jpg" style="width: 100%" />
           <div class="text">Bus type 1</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 5</div>
-          <img src="images/slide-1.jpg" style="width: 100%" />
+          <img src="images/slide-1b.jpg" style="width: 100%" />
           <div class="text">Bus type 2</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 5</div>
-          <img src="images/slide-1.jpg" style="width: 100%" />
+          <img src="images/slide-1c.jpg" style="width: 100%" />
           <div class="text">Bus type 3</div>
         </div>
 
@@ -84,13 +80,15 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
 
       <!-- end slideshow -->
 
       <!-- start timetable -->
 
-      <h1 class="timetable">Bus Route timetable</h1>
+      <h1 class="page-heading">Bus Route timetable</h1>
 
       <table>
         <tr>
@@ -130,8 +128,7 @@
     </main>
 
     <footer>Copyright © Greyhound 2020. Designed by Tafadzwa Charawunga</footer>
-    
-    <script src="js/script.js"></script> 
 
+    <script src="js/script.js"></script>
   </body>
 </html>
