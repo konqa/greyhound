@@ -256,3 +256,10 @@ table {
       font-size: 0.7em;
   }
 
+
+
+  /* Form styles */
+
+  #traveloptions {
+      display:none;
+  }

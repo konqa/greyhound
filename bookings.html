@@ -1,13 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book now | Grey-Hound Coaches</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings | Grey-Hound Coaches</title>
+    <meta
+      name="description"
+      content="Our intercity bus and coach network covers all the major cities in South Africa as well as Harare, Bulawayo in Zimbabwe and Maputo in Mozambique."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/logo-small.png" />
 
-    <h1>Book now</h1>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" width="120" />
+            </a>
+          </li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="droplink">About</a>
+            <div class="dropdown-items">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </div>
+          </li>
+          <li><a href="arrivals.html">Arrivals</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <img src="images/bookings-banner.jpg" alt="contact us" width="100%" />
+      </div>
+
+      <h1 class="page-heading">Booking Form</h1>
+
+      <p>
+        Give us your journey details below to get started with your booking.
+      </p>
+
+      <form onchange="validate()">
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Last Name:</label><br />
+          <input type="text" id="lname" name="lname" />
+        </div>
+
+        <div class="form-group">
+          <label for="idnumber">ID or Passport Number</label><br />
+          <input type="text" id="idnumber" name="idnumber" />
+        </div>
+
+        <div class="form-group">
+          <label for="contactnumber">Contact Number</label><br />
+          <input type="text" id="contactnumber" name="contactnumber" />
+        </div>
+
+        <div class="form-group bold">
+          <input type="checkbox" name="oneway" id="oneway" value="1" /> This is
+          a one way trip.
+        </div>
+
+        <div class="form-group">
+          <label for="">Departure Date:</label>
+          <input
+            type="text"
+            name="departuredate"
+            class="form-control datepicker"
+            id="startdate"
+            required=""
+          />
+        </div>
+
+        <div class="form-group" id="returns">
+          <label for="">Return Date:</label>
+          <input
+            type="text"
+            name="returndate"
+            class="form-control datepicker"
+            id="returndate"
+            required=""
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Departure Trip</label>
+          <select name="departuretrip" class="form-control" required="">
+            <option value="">Select</option>
+            <option value="Harare - Bulawayo">Harare - Bulawayo</option>
+            <option value="Harare - Johannesburg">Harare - Johannesburg</option>
+            <option value="Bulawayo - Harare">Bulawayo - Harare</option>
+            <option value="Johannesburg - Harare">Johannesburg - Harare</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Return Trip</label>
+          <select name="returntrip" class="form-control" required="">
+            <option value="">Select</option>
+            <option value="Harare - Bulawayo">Harare - Bulawayo</option>
+            <option value="Harare - Johannesburg">Harare - Johannesburg</option>
+            <option value="Bulawayo - Harare">Bulawayo - Harare</option>
+            <option value="Johannesburg - Harare">Johannesburg - Harare</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="">Preferred Meal</label>
+          <input type="radio" id="breakfast" name="meal" value="Breakfast" />
+          <label for="breakfast">Breakfast</label><br />
+          <input type="radio" id="lunch" name="meal" value="Lunch" />
+          <label for="lunch">Lunch</label><br />
+        </div>
+
+        <div class="form-group">
+          <label for="">Special Conditions</label>
+          <input
+            type="checkbox"
+            id="disability"
+            name="disability"
+            value="Disabled"
+          />
+          <label for="disability"> Disabled</label><br />
+          <input
+            type="checkbox"
+            id="vegetarian"
+            name="vegetarian"
+            value="Vegetarian"
+          />
+          <label for="vegetarian"> Vegetarian</label><br />
+          <input
+            type="checkbox"
+            id="diplomat"
+            name="diplomat"
+            value="Diplomat"
+            onchange="showTravelOptions()"
+          />
+          <label for="diplomat"> Diplomat</label>
+        </div>
+
+        <div class="form-group" id="traveloptions">
+            <label for="">Travel Options</label>
+            <input
+              type="checkbox"
+              id="extrasecurity"
+              name="extrasecurity"
+              value="Extra security"
+            />
+            <label for="extrasecurity"> Extra security</label><br />
+            
+          </div>
+
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+
+      </form>
+
+    </main>
+
+    <footer>Copyright © Greyhound 2020. Designed by Tafadzwa Charawunga</footer>
+    <script src="js/script.js"></script> 
+
+  </body>
 </html>

@@ -30,3 +30,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// Form actions
+
+function validate() {
+  if (document.querySelector("#diplomat").checked === true) {
+    window.alert("changed");
+  }
+}
+
+function showTravelOptions() {
+  console.log("sjgsjgs");
+}
