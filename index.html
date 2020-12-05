@@ -1,13 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Grey-Hound Coaches</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/logo-small.png"  />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" width="120" />
+            </a>
+          </li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="bookings.html">Bookings</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="droplink" href="about.html"
+              >About us</a
+            >
+            <div class="dropdown-items">
+              <li><a href="contact.html">Contact us</a></li>
+            </div>
+          </li>
+          <li><a href="arrivals.html">Arrivals</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h1>Home</h1>
-    
-</body>
+    <main>
+      <!-- start slideshow -->
+
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/slide-1.jpg" style="width: 100%" />
+          <div class="text">Bus type 1</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/slide-1.jpg" style="width: 100%" />
+          <div class="text">Bus type 2</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/slide-1.jpg" style="width: 100%" />
+          <div class="text">Bus type 3</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/slide-2.jpg" style="width: 100%" />
+          <div class="text">Comfortable seats</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/slide-3.jpg" style="width: 100%" />
+          <div class="text">Leg room</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- end slideshow -->
+
+      <!-- start timetable -->
+
+      <h1 class="timetable">Bus Route timetable</h1>
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Monday - Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td>Harare - Bulawayo</td>
+          <td>19h00</td>
+          <td>10h00</td>
+          <td>09h00</td>
+        </tr>
+        <tr>
+          <td>Harare - Johannesburg</td>
+          <td>16h00</td>
+          <td>12h00</td>
+          <td>10h00</td>
+        </tr>
+        <tr>
+          <td>Bulawayo - Harare</td>
+          <td>10h00</td>
+          <td>13h00</td>
+          <td>13h00</td>
+        </tr>
+        <tr>
+          <td>Johannesburg - Harare</td>
+          <td>20h00</td>
+          <td>16h00</td>
+          <td>16h00</td>
+        </tr>
+        <tr></tr>
+      </table>
+
+      <!-- end timetable -->
+    </main>
+
+    <footer>Copyright © Greyhound 2020. Designed by Tafadzwa Charawunga</footer>
+  </body>
 </html>
